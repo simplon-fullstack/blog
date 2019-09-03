@@ -151,6 +151,48 @@ require "php/view/footer.php";
 
 ```
 
+    ETAPE6: PROTEGER LE DOSSIER php/ AVEC UN FICHIER .htaccess (require all denied)
+
+
+
+## TEXTE AU FORMAT JSON
+
+JavaScript Object Notation
+
+EN JS, on peut créer des objets
+
+var monObjet = { 
+    'prop1' : 'valeur1', 
+    'prop2' : 'valeur2' 
+    };
+// UN OBJET EST UNE VALEUR QUI PERMET DE MEMORISER PLUSIEURS INFORMATIONS
+// LE FORMAT JSON EST LA SYNTAXE POUR ECRIRE UN OBJET EN JS
+
+var texte = 'ceci est un texte';
+var texteJSON = "{ 'prop1' : 'valeur1', 'prop2' : 'valeur2' }";
+
+// EN PHP
+// ON A AUSSI LES TABLEAUX ASSOCIATIFS
+$monTableau = [ 
+    "cle1" => "valeur1, 
+    "cle2" => "valeur2" 
+    ];
+
+// SERIALIZATION
+// SI JE VEUX ENREGISTRER UNE VALEUR SOUS LA FORME D'UN TEXTE
+// PERMET DE STOCKER UNE VALEUR OBJET DANS UN FICHIER
+
+// ENSUITE, JE PEUX LIRE LE FICHIER ET LE RETRANSFORMER EN OBJET JS
+// JSON.parse
+// https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/JSON/parse
+// SI ON ENVOIE A JS UN TEXTE AU FORMAT JSON
+// ON PEUT RETRANSFORMER LE TEXTE EN OBJET JS
+
+
+SERVEUR AVEC PHP    ==>    INTERNET         ==> NAVIGATEUR
+
+TABLEAU ASSOCIATIF  ==>    TEXTE JSON       ==> OBJET JAVASCRIPT
+json_encode()                                    response.json()
 
 
 

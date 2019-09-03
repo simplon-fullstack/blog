@@ -1,6 +1,6 @@
 <section>
             <h3>FORMULAIRE DE NEWSLETTER</h3>
-            <form method="GET" action="api-json.php">
+            <form method="GET" action="api-json.php" class="ajax">
                 <label>
                     nom<input type="text" name="nom" required placeholder="entrez votre nom">
                 </label>
