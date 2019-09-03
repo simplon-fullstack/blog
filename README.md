@@ -135,8 +135,21 @@ ON VA CENTRALISER LES APPELS AJAX VERS api.php
         php/view/section-galerie.php
         php/view/section-contact.php
 
+    AJOUTER LES require DANS LES AUTRES PAGES DU SITE
 
+```php
+<?php
 
+// fichier: index.php
+// ON UTILISE PHP COMME MOTEUR DE TEMPLATE
+// => OUTIL POUR NOUS AIDER A CREER DES PAGES WEB
+// https://www.php.net/manual/fr/function.require.php
+
+require "php/view/header.php";
+require "php/view/section-index.php";
+require "php/view/footer.php";
+
+```
 
 
 
