@@ -196,3 +196,42 @@ require "php/view/footer.php";
 
 
 
+## EXERCICE PRATIQUE: CONSTRUIRE LE BLOG
+
+    * construire les pages du site blog
+
+    * DANS LE MENU EN HAUT DANS header
+
+    Accueil         index.php
+    Blog            blog.php
+    Galerie         galerie.php
+    Contact         contact.php
+
+    * DANS LE MENU EN BAS DANS footer
+
+    Admin Blog       admin-blog.php
+
+
+    * DECOUPER SON CODE EN DIFFERENTS FICHIERS PHP
+
+    php/view/header.php
+    php/view/footer.php
+    php/view/section-index.php
+    ...
+
+    * AJOUTER LE CODE HTML DES FORMULAIRES
+
+    Accueil     formulaire de newsletter
+    Contact     formulaire de contact
+    Admin Blog  formulaire de création article
+
+    * AJOUTER LE CODE PHP DE TRAITEMENT DES FORMULAIRES
+
+    php/controller/traitement-newsletter.php
+    php/controller/traitement-contact.php
+    php/controller/traitement-blog.php
+
+
+
+
+
