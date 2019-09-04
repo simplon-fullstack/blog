@@ -31,7 +31,7 @@ footer {
 
 article img {
     width:100%;
-    height:200px;
+    height:calc(100vw / 3);
     object-fit:cover;
 }
 
@@ -88,7 +88,7 @@ nav a {
 
 .listePhoto img {
     width: calc(100%/4);
-    height: 250px;
+    height:calc(100vw / 4);
     object-fit:cover;
     transition: all 1s;
 }
@@ -97,8 +97,8 @@ nav a {
 @media screen and (max-width: 425px) {
     /* ON REDUIT LE NOMBRE DE COLONNES SI ON EST SUR UN PETIT ECRAN*/
     .listePhoto img {
-        width: calc(100%/2);    
-        height: 200px;
+        width: calc(100% / 2);    
+        height: calc(100vmin / 2);
     }
         
 }
