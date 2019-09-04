@@ -9,12 +9,9 @@ html, body {
     box-sizing: border-box;
 }
 
-h1 {
-    color:orange;
-}
-
 h1, h2, h3 {
     padding:1rem;
+    margin-top:0;
 }
 
 footer {
@@ -36,9 +33,11 @@ article img {
     height:200px;
     object-fit:cover;
 }
+
 article p {
     padding:1rem;
 }
+
 form {
     display:flex;
     flex-direction:column;
@@ -51,10 +50,45 @@ form label span {
     display:block;
     width:160px;
 }
+
 input, textarea, button, select {
     display:block;
     width:100%;
     padding:0.5rem;
     margin:0.5rem;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+/* MENU FLEX */
+
+nav ul {
+    display:flex;
+    flex-wrap:wrap;
+    padding-left:0;
+    list-style:none;
+    width:100%;
+}
+
+nav ul li {
+    padding:1rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+/* COLORS */
+
+
+h1 {
+    color:orange;
+}
+
+header {
+    background-color: #cccccc;
+}
+
+footer {
+    background-color: #aaaaaa;
 }
