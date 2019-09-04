@@ -24,8 +24,16 @@ footer {
     width:100%;
 }
 
-article {
+.listeBlog article {
     width: calc(100% /3);
+}
+
+@media screen and (max-width: 425px) {
+    /* ON REDUIT LE NOMBRE DE COLONNES SI ON EST SUR UN PETIT ECRAN*/
+    .listeBlog article {
+        width: calc(100% / 1);
+    }
+    
 }
 
 article img {
@@ -92,3 +100,12 @@ header {
 footer {
     background-color: #aaaaaa;
 }
+
+@media screen and (max-width: 425px) {
+
+    .listeBlog article h3 {
+        border-top:1px solid #aaaaaa;
+    }
+        
+}
+
